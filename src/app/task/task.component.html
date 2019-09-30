@@ -1,0 +1,23 @@
+<form [formGroup]='task'>
+
+    <p>userid:<input type="text" formControlName="userid"></p>
+    <p>id:<input type="text" formControlName="id"></p>
+    <p>title:<input type="text" formControlName="title"></p>
+    <p>completed:<input type="text" formControlName="completed"></p>
+    <button (click)="task1()">show</button>
+</form>
+<input type="text" placeholder="search" [(ngModel)]="search">
+<table border="1px">
+    <tr>
+        <th>userid</th>
+        <th>id</th>
+        <th>title</th>
+        <th>completed</th>
+    </tr>
+    <tr *ngFor='let b of record|filter:search'>
+        <td>{{b.userId}}</td>
+        <td>{{b.id}}</td>
+        <td>{{b.title}}</td>
+        <td>{{b.completed}}</td>
+    </tr>
+</table>

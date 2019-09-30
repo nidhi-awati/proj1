@@ -1,0 +1,6 @@
+<div *ngFor='let b of image' (click)="photo(b)">
+    <p>{{b.id}}</p>
+    <p>{{b.title}}</p>
+    <!-- <img src="{{b.url}}"> -->
+    <img src="{{b.thumbnailUrl}}">
+</div>

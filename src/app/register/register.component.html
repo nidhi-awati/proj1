@@ -1,6 +1,8 @@
-<h1>user registration</h1>
+<fieldset style="background-color: darkcyan">
+<h1>User registration</h1>
 <form [formGroup]="register">
-    <p>email:<input type="email" formControlName="emailid"></p>
-    <p>Password:<input type="password" formControlName="pass"></p>
-    <button (click)="func(register.value)">save</button>
+    <p>Email:<input type="email" placeholder="enter your email" formControlName="emailid"></p>
+    <p>Password:<input type="password" placeholder="enter your password" formControlName="pass"></p>
+    <button style="background-color: coral" (click)="func(register.value)">save</button>
 </form>
+</fieldset>
